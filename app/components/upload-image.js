@@ -140,26 +140,26 @@ export default function UploadImage({ refreshUploads }) {
 								>
 									×
 								</button>
-														<div
-															style={{
-																position: 'relative',
-																background: 'white',
-																borderRadius: 24,
-																boxShadow: '0 8px 32px 0 rgba(31, 38, 135, 0.20)',
-																padding: '2.5rem 2.5rem 2rem 2.5rem',
-																width: '400px',
-																minHeight: '340px',
-																maxWidth: '95vw',
-																maxHeight: '95vh',
-																display: 'flex',
-																flexDirection: 'column',
-																alignItems: 'center',
-																justifyContent: 'center',
-																gap: '1.2rem',
-																transition: 'width 0.2s, height 0.2s',
-															}}
-															onClick={e => e.stopPropagation()}
-														>
+									<div
+										style={{
+											position: 'relative',
+											background: 'white',
+											borderRadius: 24,
+											boxShadow: '0 8px 32px 0 rgba(31, 38, 135, 0.20)',
+											padding: '2.5rem 2.5rem 2rem 2.5rem',
+											width: '400px',
+											minHeight: '340px',
+											maxWidth: '95vw',
+											maxHeight: '95vh',
+											display: 'flex',
+											flexDirection: 'column',
+											alignItems: 'center',
+											justifyContent: 'center',
+											gap: '1.2rem',
+											transition: 'width 0.2s, height 0.2s',
+										}}
+										onClick={e => e.stopPropagation()}
+									>
 									<form onSubmit={handleUpload} style={{ width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
 										<label htmlFor="file-upload" style={{
 											display: 'inline-block',
