@@ -58,9 +58,9 @@ export default function Home() {
 
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-br from-gray-50 to-gray-200">
-      <header className="py-10 px-8 text-center bg-gradient-to-r from-blue-400 via-indigo-400 to-purple-400 shadow-lg rounded-b-3xl border-b-4 border-blue-500">
+  <header className="py-10 px-8 text-center bg-gradient-to-r from-blue-400 via-indigo-400 to-purple-400 shadow-lg rounded-b-3xl border-b-4 border-blue-500">
         <h1 style={{
-          fontFamily: "'Pacifico', cursive, 'Comic Sans MS', 'Brush Script MT', sans-serif",
+          fontFamily: "'Pacifico', cursive, 'Brush Script MT', sans-serif",
           fontSize: '2.8rem',
           fontWeight: 900,
           color: '#fff',
@@ -69,7 +69,7 @@ export default function Home() {
           marginBottom: '0.5rem',
           lineHeight: 1.1,
         }}>Photo Gallery</h1>
-        <p className="text-lg text-white/90 font-medium drop-shadow">Please log in to continue</p>
+        <p className="text-lg text-white/90 font-medium drop-shadow mt-5">Please log in to continue</p>
       </header>
       <main className="flex-1 flex flex-col items-center justify-center px-4 py-8 gap-8">
         <form onSubmit={handleEmailLogin} className="bg-white rounded-xl shadow-lg p-8 flex flex-col gap-4 w-full max-w-sm">
@@ -125,8 +125,8 @@ export default function Home() {
         </div>
         {error && <div className="text-red-500 mt-4">{error}</div>}
       </main>
-      <footer className="py-6 text-center text-base font-semibold bg-gradient-to-r from-blue-400 via-indigo-400 to-purple-400 text-white shadow-inner rounded-t-3xl border-t-4 border-blue-500 tracking-wide drop-shadow-lg">
-        <span style={{fontFamily: "'Pacifico', cursive, 'Comic Sans MS', 'Brush Script MT', sans-serif", fontSize: '1.3rem', letterSpacing: '0.04em'}}>© 2025 Photo Gallery</span>
+  <footer className="py-6 text-center text-base font-semibold bg-gradient-to-r from-blue-400 via-indigo-400 to-purple-400 text-white shadow-inner rounded-t-3xl border-t-4 border-blue-500 tracking-wide drop-shadow-lg" style={{fontFamily: "'Pacifico', cursive, 'Brush Script MT', sans-serif"}}>
+  <span style={{fontFamily: "'Pacifico', cursive, 'Brush Script MT', sans-serif", fontSize: '1.3rem', letterSpacing: '0.04em'}}>© 2025 Photo Gallery</span>
       </footer>
     </div>
   );
