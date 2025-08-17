@@ -35,7 +35,6 @@ export default function Home() {
     const provider = new GoogleAuthProvider();
     try {
       await signInWithPopup(auth, provider);
-      // router.push('/home-page'); // Not needed, handled by onAuthStateChanged
     } catch (err) {
       setError('Google login failed');
     }
@@ -50,7 +49,6 @@ export default function Home() {
       } else {
         await signInWithEmailAndPassword(auth, email, password);
       }
-      // router.push('/home-page'); // Not needed, handled by onAuthStateChanged
     } catch (err) {
       setError(err.message || 'Email login failed');
     }
